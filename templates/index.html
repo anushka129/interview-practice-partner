@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Interview Practice Partner (Demo)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background:#f5f7fa;}
+    .app { max-width:900px; margin:30px auto; background:white; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.08); padding:20px;}
+    header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;}
+    #chat { height:400px; overflow:auto; border:1px solid #eee; padding:12px; border-radius:6px; background:#fbfdff;}
+    .message { margin:8px 0; }
+    .user { text-align:right; }
+    .user .bubble { display:inline-block; background:#d1e7ff; padding:8px 12px; border-radius:12px; }
+    .bot .bubble { display:inline-block; background:#f1f3f5; padding:8px 12px; border-radius:12px; }
+    footer { margin-top:12px; display:flex; gap:8px; }
+    select, input[type=text] { padding:8px; border-radius:6px; border:1px solid #ddd; }
+    button { padding:8px 12px; border-radius:6px; border:none; background:#2563eb; color:white; cursor:pointer; }
+    button.secondary { background:#6b7280; }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h2>Interview Practice Partner</h2>
+      <div>
+        <label for="role">Role:</label>
+        <select id="role">
+          <option>software engineer</option>
+          <option>product manager</option>
+          <option>sales associate</option>
+          <option>data scientist</option>
+          <option>retail associate</option>
+        </select>
+      </div>
+    </header>
+
+    <div id="chat" aria-live="polite"></div>
+
+    <footer>
+      <input id="message" type="text" placeholder="Type your message or answer here" style="flex:1"/>
+      <button id="mic" class="secondary">🎤</button>
+      <button id="send">Send</button>
+      <button id="feedback" class="secondary">Get feedback</button>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+<footer>
+  <input id="message" type="text" placeholder="Type your message or answer here" style="flex:1"/>
+  <button id="mic" class="secondary">🎤</button>
+  <button id="send">Send</button>
+  <button id="feedback" class="secondary">Get feedback</button>
+  <button id="restart" class="secondary">Restart</button>
+</footer>
+</html>
