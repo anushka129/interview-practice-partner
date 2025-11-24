@@ -10,8 +10,6 @@
 - `templates/index.html` — Simple chat UI with voice input using Web Speech API.
 - `static/script.js` — Frontend logic to interact with backend.
 - `requirements.txt` — Python dependencies.
-- `demo_script.txt` — Video demo script and suggested scenes.
-- `sample_test_prompts.md` — Test scenarios and personas.
 - `README.md` — This file.
 
 ---
@@ -54,5 +52,3 @@ python app.py
 - **Follow-up questions:** model is instructed to follow up based on user answers — conversation history preserved.
 - **Post-interview feedback:** "Get feedback" button sends the conversation to the model in `feedback` mode.
 - **Interaction mode:** Chat UI with optional voice input; simple to adapt to voice-only flows.
-- **Demo scenarios:** Provided in `sample_test_prompts.md`.
-
